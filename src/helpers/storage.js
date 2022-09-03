@@ -1,6 +1,13 @@
 const storage = {
     addItem() {},
-    getItem() {},
+    reedItem(key, defaultValue) {
+        try {
+           const result = JSON.parse(localStorage.getItem(key));
+           return result ? result : defaultValue;
+        }catch (error) {
+            return null; 
+        }
+    },
     deleteItem() {},
     clear() {},
 
