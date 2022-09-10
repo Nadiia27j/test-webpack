@@ -61,17 +61,6 @@
 // addEventListener('DOMContentLoaded', handleMount);
 
 
-const logMessage = () => {
-  console.log('log через 3 сек');
-}
-
-console.log('до виклику setTimeout');
-
-setTimeout(() => {
-  console.log('колбек для сеттаймаут');
-}, 2000)
-
-console.log('після виклику setTimeout');
 
 
 
